@@ -1,3 +1,6 @@
+# Mais informações sobre a yfinance:
+#  https://algotrading101.com/learn/yfinance-guide/
+
 import yfinance as yf
 import pandas as pd
 
