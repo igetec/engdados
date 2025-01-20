@@ -68,7 +68,6 @@ func ConnectDB() *gorm.DB {
 
 	// Se a tabela já existir, eu apago antes.
 	if db.Migrator().HasTable("bi_equipenasesf") {
-		//@ renomei a bi_ftleads com dados válidos para depois apagá-la caso o rename da stage dê certo
 		if err := db.Migrator().DropTable("bi_equipenasesf"); err != nil {
 			log.Println("Houve erro em APAGAR a tabela de dados")
 			os.Exit(1)
